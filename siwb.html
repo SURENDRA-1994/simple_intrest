@@ -1,0 +1,41 @@
+<html>
+ <head>
+  <title>SimpleIntrestWithFields</title>
+
+  <script type="text/javascript">
+   function inst()
+  {
+    var a=parseInt(document.getElementById("amount").value);
+    var b=parseInt(document.getElementById("intrest").value);
+    var c=b*0.01;
+    var d=a*c;
+    var m=parseInt(document.getElementById("month").value);
+    var dy=parseInt(document.getElementById("day").value);
+     var e=d*m;
+     var f=d/30;
+     var g=dy*f
+     var h=e+g;
+   
+     document.getElementById("ans1").value=h;
+   
+     document.getElementById("ans2").value=a+h;
+  }
+      //document.write("The Intrest of ",b," Rupees per",m," months+",dy," days =",h);
+      //document.writeln("<br>The Total Amount With Intrest is:",a,"+",h,"=",a+h);
+
+  
+  </script>
+
+   </head>
+ <body>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="Amount", placeholder="Amount", id="amount"></input>
+   <input placeholder="Intrest in %", id="intrest"></input><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input placeholder="No of Months", id="month"></input>+
+   <input placeholder="No of Days", id="day"></input><br>
+   
+   Intrest:<input  id="ans1">
+   Total Amount:<input  id="ans2"><br><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="inst() ">Calculate</button>
+
+  </body>
+</html>
